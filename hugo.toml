@@ -1,6 +1,6 @@
 # -- Site Configuration --
 theme = "congo"
-baseURL = "https://hercoolvery.github.io/gabiapps/"
+baseURL = "https://gabiapps.com/"
 defaultContentLanguage = "en"
 languageCode = "en-us"
 [languages]
