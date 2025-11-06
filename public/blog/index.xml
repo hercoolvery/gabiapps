@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tech Blog on Gabi Apps</title>
+    <link>http://localhost:1313/gabiapps/blog/</link>
+    <description>Recent content in Tech Blog on Gabi Apps</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 02 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/gabiapps/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Example Blog Post</title>
+      <link>http://localhost:1313/gabiapps/blog/placeholder-post/</link>
+      <pubDate>Tue, 02 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gabiapps/blog/placeholder-post/</guid>
+      <description>This post is an example for demonstration purposes.</description>
+    </item>
+  </channel>
+</rss>

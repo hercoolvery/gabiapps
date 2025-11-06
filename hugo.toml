@@ -1,0 +1,118 @@
+# -- Site Configuration --
+theme = "congo"
+baseURL = "https://hercoolvery.github.io/gabiapps/"
+defaultContentLanguage = "en"
+languageCode = "en-us"
+[languages]
+  [languages.en]
+    title = "Gabi Apps"
+    languageName = "English"
+    weight = 1
+    [[languages.en.menu.main]]
+      name = "About"
+      pageRef = "about"
+      weight = 10
+    [[languages.en.menu.main]]
+      name = "Apps"
+      pageRef = "apps"
+      weight = 20
+    [[languages.en.menu.main]]
+      name = "Blog"
+      pageRef = "blog"
+      weight = 30
+    [[languages.en.menu.main]]
+      name = "Support"
+      pageRef = "support"
+      weight = 40
+    [[languages.en.menu.main]]
+      name = "GitHub"
+      url = "https://github.com/applys"
+      weight = 50
+      [languages.en.menu.main.params]
+        icon = "github"
+        showName = false
+        target = "_blank"
+    [[languages.en.menu.main]]
+      identifier = "search"
+      weight = 99
+      [languages.en.menu.main.params]
+        action = "search"
+    [[languages.en.menu.main]]
+      identifier = "locale"
+      weight = 100
+      [languages.en.menu.main.params]
+        action = "locale"
+
+enableRobotsTXT = true
+summaryLength = 0
+
+[pagination]
+  pagerSize = 15
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+fingerprintAlgorithm = "sha256"
+
+[params]
+  colorScheme = "congo"
+  defaultAppearance = "light"
+  autoSwitchAppearance = true
+
+  enableSearch = true
+  enableCodeCopy = true
+  enableImageLazyLoading = true
+  enableImageWebp = true
+  enableQuicklink = true
+  [params.author]
+    name = "Sungryong Cho"
+    headline = "S/W Engineer & Creator of Gabi Apps"
+    image = "images/gabiapps_about_my_img.png"
+  [params.header]
+    layout = "basic"
+    showTitle = true
+  [params.footer]
+    showCopyright = true
+    showThemeAttribution = true
+    showAppearanceSwitcher = true
+    showScrollToTop = true
+
+[homepage]
+  layout = "profile" # Changed from custom to profile for a clean start
+  showRecent = true
+  recentLimit = 5
+
+[article]
+  showDate = true
+  showDateUpdated = false
+  showAuthor = true
+  showBreadcrumbs = true
+  showDraftLabel = true
+  showEdit = false # Disabled edit link
+  showHeadingAnchors = true
+  showPagination = true
+  invertPagination = false
+  showReadingTime = true
+  showTableOfContents = true
+  showTaxonomies = false
+  showWordCount = false
+  showComments = false
+
+[list]
+  showBreadcrumbs = true
+  showSummary = false
+  showTableOfContents = true
+  showTaxonomies = false
+  groupByYear = false
+  paginationWidth = 1
+
+[sitemap]
+  excludedKinds = ["taxonomy", "term"]
+
+[taxonomy]
+  showTermCount = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
