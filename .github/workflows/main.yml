@@ -1,0 +1,58 @@
+name: Deploy Hugo site to Pages
+
+on:
+  # master 브랜치에 푸시가 발생할 때마다 워크플로우 실행
+  push:
+    branches: ["master"]
+
+  # 수동 실행 허용
+  workflow_dispatch:
+
+# 필요한 권한 설정
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 빌드 환경 설정
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: true # 테마 서브모듈을 체크아웃
+          fetch-depth: 0
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: 'latest' # 최신 Hugo 버전 사용
+          extended: true
+
+      - name: Build with Hugo
+        # 'hugo --minify' 명령어로 정적 파일을 빌드합니다.
+        run: hugo --minify
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Hugo 빌드 결과물(정적 파일)은 'public' 폴더에 생성됩니다.
+          path: ./public
+
+  # 배포 단계
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
