@@ -78,7 +78,7 @@ fingerprintAlgorithm = "sha256"
     showScrollToTop = true
 
 [homepage]
-  layout = "profile" # Changed from custom to profile for a clean start
+  layout = "custom" # Changed from custom to profile for a clean start
   showRecent = true
   recentLimit = 5
 
