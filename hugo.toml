@@ -2,11 +2,11 @@
 theme = "congo"
 baseURL = "https://gabiapps.com/"
 defaultContentLanguage = "en"
-languageCode = "en-us"
 [languages]
   [languages.en]
     title = "Gabi Apps"
     languageName = "English"
+    languageCode = "en-us"
     weight = 1
     [[languages.en.menu.main]]
       name = "About"
@@ -42,6 +42,45 @@ languageCode = "en-us"
       weight = 100
       [languages.en.menu.main.params]
         action = "locale"
+  [languages.ko]
+    title = "가비앱스"
+    languageName = "한국어"
+    languageCode = "ko-kr"
+    weight = 2
+    [[languages.ko.menu.main]]
+      name = "소개"
+      pageRef = "about"
+      weight = 10
+    [[languages.ko.menu.main]]
+      name = "앱"
+      pageRef = "apps"
+      weight = 20
+    [[languages.ko.menu.main]]
+      name = "블로그"
+      pageRef = "blog"
+      weight = 30
+    [[languages.ko.menu.main]]
+      name = "지원"
+      pageRef = "support"
+      weight = 40
+    [[languages.ko.menu.main]]
+      name = "GitHub"
+      url = "https://github.com/hercoolvery"
+      weight = 50
+      [languages.ko.menu.main.params]
+        icon = "github"
+        showName = false
+        target = "_blank"
+    [[languages.ko.menu.main]]
+      identifier = "search"
+      weight = 99
+      [languages.ko.menu.main.params]
+        action = "search"
+    [[languages.ko.menu.main]]
+      identifier = "locale"
+      weight = 100
+      [languages.ko.menu.main.params]
+        action = "locale"
 
 enableRobotsTXT = true
 summaryLength = 0
@@ -65,7 +104,7 @@ Copyright = "Copyright © 2025 - Gabi Apps All Rights Reserved."
   enableImageWebp = true
   enableQuicklink = true
   [params.author]
-    name = "Sungryong Cho"
+    name = "Cho Sungryong"
     headline = "S/W Engineer & Creator of Gabi Apps"
     image = "images/gabiapps_about_my_img.png"
   [params.header]

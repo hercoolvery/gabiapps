@@ -9,7 +9,9 @@ This page provides a detailed overview of my professional experience, skills, an
 
 ## Experiences
 
-### Gabi Apps (Now)
+### Gabi Apps, Chief Creator
+
+> I plan apps, utilities, and services, and develop them using Vibe Coding. I primarily use SwiftUI for app development and also provide development consulting services and conduct small-scale lectures.
 
 ### Altibase, R&D Lead
 

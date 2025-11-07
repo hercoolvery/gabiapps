@@ -5,7 +5,7 @@ layout: "simple"
 
 {{< profile >}}
 
-## Hello, I'm Sungryong of Gabi Apps.
+## Hello, I'm Hercoolvery of Gabi Apps.
 
 For nearly 20 years, I've delved into the profound world of databases and system software, passionately dedicated to creating stable and efficient software. Exploring the intricate internals of complex technologies, understanding their structures, and designing better systems has always been a great joy for me.
 

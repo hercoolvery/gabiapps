@@ -1,0 +1,5 @@
+shortcode:
+  recent_articles: "최근 업데이트"
+
+list:
+  no_articles: "아직 게시된 글이 없습니다."
