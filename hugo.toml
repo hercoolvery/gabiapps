@@ -105,7 +105,7 @@ Copyright = "Copyright © 2025 - Gabi Apps All Rights Reserved."
   enableQuicklink = true
   [params.author]
     name = "Cho Sungryong"
-    headline = "S/W Engineer & Creator of Gabi Apps"
+    headline = "System S/W Engineer & Chief Creator of Gabi Apps"
     image = "images/gabiapps_about_my_img.png"
   [params.header]
     layout = "basic"
