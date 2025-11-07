@@ -1,0 +1,91 @@
+/*
+// Previous primary color palette (example: Violet)
+:root {
+  --color-primary-50: 245, 243, 255;
+  --color-primary-100: 237, 233, 254;
+  --color-primary-200: 221, 214, 254;
+  --color-primary-300: 196, 181, 253;
+  --color-primary-400: 167, 139, 250;
+  --color-primary-500: 139, 92, 246;
+  --color-primary-600: 124, 58, 237;
+  --color-primary-700: 109, 40, 217;
+  --color-primary-800: 91, 33, 182;
+  --color-primary-900: 76, 29, 149;
+  --color-primary-950: 46, 16, 101;
+}
+*/
+
+/*
+// Previous primary color palette: Mint (based on Tailwind CSS emerald)
+:root {
+  --color-primary-50: 236, 253, 245;
+  --color-primary-100: 209, 250, 229;
+  --color-primary-200: 167, 243, 208;
+  --color-primary-300: 110, 231, 183;
+  --color-primary-400: 52, 211, 153;
+  --color-primary-500: 16, 185, 129;
+  --color-primary-600: 5, 150, 105;
+  --color-primary-700: 4, 120, 87;
+  --color-primary-800: 6, 95, 70;
+  --color-primary-900: 6, 78, 59;
+  --color-primary-950: 2, 44, 34;
+}
+*/
+
+/*
+// Previous primary color palette: Teal (based on Tailwind CSS teal)
+:root {
+  --color-primary-50: 240, 253, 250;
+  --color-primary-100: 204, 251, 241;
+  --color-primary-200: 153, 246, 228;
+  --color-primary-300: 94, 234, 212;
+  --color-primary-400: 45, 212, 191;
+  --color-primary-500: 20, 184, 166;
+  --color-primary-600: 13, 148, 136;
+  --color-primary-700: 15, 118, 108;
+--color-primary-800: 17, 94, 89;
+  --color-primary-900: 13, 77, 69;
+  --color-primary-950: 7, 42, 38;
+}
+*/
+
+/*
+// Previous primary color palette: Custom Mint (#18f5e2)
+:root {
+  --color-primary-50: 230, 254, 252;
+  --color-primary-100: 199, 252, 248;
+  --color-primary-200: 153, 249, 242;
+  --color-primary-300: 99, 246, 234;
+  --color-primary-400: 48, 237, 220;
+  --color-primary-500: 24, 245, 226;
+  --color-primary-600: 19, 196, 181;
+  --color-primary-700: 16, 156, 144;
+  --color-primary-800: 13, 117, 108;
+  --color-primary-900: 10, 78, 72;
+  --color-primary-950: 5, 42, 39;
+}
+*/
+
+/* New primary color palette: Custom Mint (#0ABAB5) */
+:root {
+  --color-primary-50: 230, 252, 252;
+  --color-primary-100: 199, 247, 247;
+  --color-primary-200: 153, 240, 240;
+  --color-primary-300: 99, 229, 229;
+  --color-primary-400: 48, 209, 209;
+  --color-primary-500: 10, 186, 181;
+  --color-primary-600: 8, 149, 145;
+  --color-primary-700: 7, 119, 116;
+  --color-primary-800: 6, 90, 88;
+  --color-primary-900: 5, 60, 59;
+  --color-primary-950: 2, 32, 31;
+}
+
+.social-icon-link:hover {
+  background-color: transparent !important;
+}
+
+.social-icon-link svg {
+  height: 1.2em;
+  width: 1.2em;
+}

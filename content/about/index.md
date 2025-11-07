@@ -25,8 +25,8 @@ This space is dedicated to documenting Gabi Apps' products, technology, and jour
 
 ---
 
-### **Contact & Links**
-
-- **Email:** `hercoolvery@naver.com`
-- **LinkedIn:** [linkedin.com/in/sungryong-cho-66855349](https://linkedin.com/in/sungryong-cho-66855349/)
-- **GitHub:** [github.com/hercoolvery](https://github.com/hercoolvery)
+<div class="flex justify-center space-x-4 mt-8">
+  {{< social-icon link="mailto:hercoolvery@naver.com" icon="email" title="Email" >}}
+  {{< social-icon link="https://linkedin.com/in/sungryong-cho-66855349" icon="linkedin" title="LinkedIn" >}}
+  {{< social-icon link="https://github.com/hercoolvery" icon="github" title="GitHub" >}}
+</div>

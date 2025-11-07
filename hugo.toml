@@ -45,6 +45,7 @@ languageCode = "en-us"
 
 enableRobotsTXT = true
 summaryLength = 0
+Copyright = "Copyright © 2025 - Gabi Apps All Rights Reserved."
 
 [pagination]
   pagerSize = 15

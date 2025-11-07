@@ -1,0 +1,16 @@
+{{/* Custom homepage layout */}}
+
+<div class="container mx-auto px-4 py-8">
+  {{/* Main Title */}}
+  <h1 class="mb-12 font-extrabold text-primary-700 dark:text-primary-300" style="font-size: 4rem;">Gabi Apps</h1>
+
+  {{/* Content from _index.md */}}
+  <div class="prose max-w-full dark:prose-invert mb-8">
+    {{ .Content }}
+  </div>
+
+  {{/* Recent Articles Section */}}
+  <section>
+    {{ partial "recent-articles.html" . }}
+  </section>
+</div>

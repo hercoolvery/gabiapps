@@ -3,4 +3,4 @@ title: "Tech Blog"
 layout: "list"
 ---
 
-Sharing knowledge and experiences gained during development.
+Sharing knowledge and experiences gained during developer's life.

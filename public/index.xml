@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Welcome to Gabi Apps on Gabi Apps</title>
+    <title>Gabi Apps</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content in Welcome to Gabi Apps on Gabi Apps</description>
+    <description>Recent content on Gabi Apps</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 06 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 07 Nov 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blog Post Test</title>
+      <link>http://localhost:1313/blog/b20251107/</link>
+      <pubDate>Fri, 07 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/b20251107/</guid>
+      <description>This post is for test.</description>
+    </item>
     <item>
       <title>Example Blog Post</title>
       <link>http://localhost:1313/blog/placeholder-post/</link>
