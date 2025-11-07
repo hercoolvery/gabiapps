@@ -1,0 +1,17 @@
+{{ if .Site.Params.homepage.showRecent | default false }}
+  <h2 class="mt-8 font-extrabold" style="font-size: 2rem;">{{ i18n "shortcode.recent_articles" | emojify }}</h2>
+  {{/* Get pages from 'apps' and 'blog' sections */}}
+  {{ $apps := where .Site.RegularPages "Section" "apps" }}
+  {{ $blog := where .Site.RegularPages "Section" "blog" }}
+
+  {{/* Merge the two sets of pages */}}
+  {{ $pages := $apps | union $blog }}
+
+  {{/* Sort the merged list by Lastmod date, descending */}}
+  {{ $sortedPages := $pages.ByLastmod.Reverse }}
+
+  {{/* Display all sorted pages */}}
+  {{ range $sortedPages }}
+    {{ partial "article-link.html" . }}
+  {{ end }}
+{{ end }}

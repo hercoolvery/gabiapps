@@ -2,7 +2,7 @@ const themeConfig = require('./themes/congo/tailwind.config.js');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  ...themeConfig, // Spread the theme's config
+  mode: 'jit',
   content: [
     "./layouts/**/*.html",
     "./content/**/*.{html,md}",
@@ -10,13 +10,15 @@ module.exports = {
     "./themes/congo/content/**/*.{html,md}",
   ],
   theme: {
-    ...themeConfig.theme, // Spread the theme's theme config
     extend: {
-      ...themeConfig.theme.extend, // Spread the theme's extend config
+      ...themeConfig.theme.extend,
     },
+    colors: {
+      ...themeConfig.theme.colors,
+    }
   },
   plugins: [
-    ...themeConfig.plugins, // Spread the theme's plugins
     require('@tailwindcss/typography'),
+    ...themeConfig.plugins.filter(plugin => plugin.name !== '@tailwindcss/typography'),
   ],
-}
+};
