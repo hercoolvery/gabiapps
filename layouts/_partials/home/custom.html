@@ -1,0 +1,28 @@
+{{/* Render the content from _index.md */}}
+<div class="prose max-w-full dark:prose-invert">
+  {{ .Content }}
+</div>
+
+{{/*
+  Custom homepage layout to combine and list content from 'apps' and 'blog' sections,
+  sorted by last modification date.
+*/}}
+
+{{/* Get pages from 'apps' and 'blog' sections */}}
+{{ $apps := where site.RegularPages "Section" "apps" }}
+{{ $blog := where site.RegularPages "Section" "blog" }}
+
+{{/* Merge the two sets of pages */}}
+{{ $pages := $apps | union $blog }}
+
+{{/* Sort the merged list by Lastmod date, descending */}}
+{{ $sortedPages := $pages.ByLastmod.Reverse }}
+
+<div class="w-full pt-12">
+  <h1 class="mb-6 text-4xl font-extrabold">Recent Updates</h1>
+  <div class="space-y-8">
+    {{ range $sortedPages }}
+      {{ partial "article-link.html" . }}
+    {{ end }}
+  </div>
+</div>

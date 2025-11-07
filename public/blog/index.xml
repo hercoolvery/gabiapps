@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tech Blog on Gabi Apps</title>
-    <link>http://localhost:1313/gabiapps/blog/</link>
+    <link>http://localhost:1313/blog/</link>
     <description>Recent content in Tech Blog on Gabi Apps</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 02 Jan 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/gabiapps/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Example Blog Post</title>
-      <link>http://localhost:1313/gabiapps/blog/placeholder-post/</link>
-      <pubDate>Tue, 02 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/gabiapps/blog/placeholder-post/</guid>
+      <link>http://localhost:1313/blog/placeholder-post/</link>
+      <pubDate>Thu, 06 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/placeholder-post/</guid>
       <description>This post is an example for demonstration purposes.</description>
     </item>
   </channel>

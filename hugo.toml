@@ -52,9 +52,8 @@ summaryLength = 0
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
-fingerprintAlgorithm = "sha256"
-
 [params]
+  fingerprintAlgorithm = "sha256"
   colorScheme = "congo"
   defaultAppearance = "light"
   autoSwitchAppearance = true
@@ -76,41 +75,36 @@ fingerprintAlgorithm = "sha256"
     showThemeAttribution = true
     showAppearanceSwitcher = true
     showScrollToTop = true
-
-[homepage]
-  layout = "custom" # Changed from custom to profile for a clean start
-  showRecent = true
-  recentLimit = 5
-
-[article]
-  showDate = true
-  showDateUpdated = false
-  showAuthor = true
-  showBreadcrumbs = true
-  showDraftLabel = true
-  showEdit = false # Disabled edit link
-  showHeadingAnchors = true
-  showPagination = true
-  invertPagination = false
-  showReadingTime = true
-  showTableOfContents = true
-  showTaxonomies = false
-  showWordCount = false
-  showComments = false
-
-[list]
-  showBreadcrumbs = true
-  showSummary = false
-  showTableOfContents = true
-  showTaxonomies = false
-  groupByYear = false
-  paginationWidth = 1
-
-[sitemap]
-  excludedKinds = ["taxonomy", "term"]
-
-[taxonomy]
-  showTermCount = true
+  [params.homepage]
+    layout = "custom" # Changed from custom to profile for a clean start
+    showRecent = true
+    recentLimit = 5
+  [params.article]
+    showDate = true
+    showDateUpdated = false
+    showAuthor = true
+    showBreadcrumbs = true
+    showDraftLabel = true
+    showEdit = false # Disabled edit link
+    showHeadingAnchors = true
+    showPagination = true
+    invertPagination = false
+    showReadingTime = true
+    showTableOfContents = true
+    showTaxonomies = false
+    showWordCount = false
+    showComments = false
+  [params.list]
+    showBreadcrumbs = true
+    showSummary = false
+    showTableOfContents = true
+    showTaxonomies = false
+    groupByYear = false
+    paginationWidth = 1
+  [params.sitemap]
+    excludedKinds = ["taxonomy", "term"]
+  [params.taxonomy]
+    showTermCount = true
 
 [markup]
   [markup.goldmark]

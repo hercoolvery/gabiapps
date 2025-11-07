@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Apps on Gabi Apps</title>
-    <link>http://localhost:1313/gabiapps/apps/</link>
+    <link>http://localhost:1313/apps/</link>
     <description>Recent content in Apps on Gabi Apps</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/gabiapps/apps/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/apps/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Example App</title>
-      <link>http://localhost:1313/gabiapps/apps/placeholder-app/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/gabiapps/apps/placeholder-app/</guid>
+      <title>Hey, Bucket!</title>
+      <link>http://localhost:1313/apps/placeholder-app/</link>
+      <pubDate>Mon, 20 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/apps/placeholder-app/</guid>
       <description>This app is an example for demonstration purposes.</description>
     </item>
   </channel>
